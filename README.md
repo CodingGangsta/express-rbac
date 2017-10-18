@@ -1,25 +1,25 @@
 # Express authorization
 
-Express-authorization is an [Express](http://expressjs.com/)-compatible roles and permissions authorization
+Express-rbac is an [Express](http://expressjs.com/)-compatible roles and permissions authorization
 middleware for [Node.js](http://nodejs.org/).
 
-Express-authorization purpose is to provide traditional roles and permissions
+Express-rbac purpose is to provide traditional roles and permissions
 authorization to connect/ express applications, which it does through a
-middleware and a set of functions for runtime strategies.  Using express-authorization is really simple. Only hook up the library to the express pipeline providing
+middleware and a set of functions for runtime strategies.  Using express-rbac is really simple. Only hook up the library to the express pipeline providing
 a callback function for loading the user roles and permissions.
 Once the library is hooked up on the pipeline, just use the 4 built in available handlers for route authorization, or the 4 functions added to the request object to be able to provide runtime strategies regarding the user's roles and permissions.
 
 ## Install
 
 ```
-$ npm install express-authorization
+$ npm install express-rbac
 ```
 
 ## Usage
 
 ### Registration
 
-Before using express-authorization, the library should be initialized and hooked up to the pipeline.
+Before using express-rbac, the library should be initialized and hooked up to the pipeline.
 
 ```javascript
 
@@ -29,7 +29,7 @@ var app = express();
 /*
  * Require the library
 */
-var auth = require('express-authorization');
+var auth = require('express-rbac');
 
 /*
  * Hook up the library to the express pipeline.
@@ -151,7 +151,7 @@ app.get('/someauthorizedpath',
 
 ### Runtime check and strategies
 
-Express-authorization will register its four authorization check functions into the request object for providing runtime evaluation and authorization strategies.  
+Express-rbac will register its four authorization check functions into the request object for providing runtime evaluation and authorization strategies.  
 **Note:** in case where the "bindToProperty" option is used, the functions will be registered to the request's specified object.  
 **Note:** this functions will only be available after hooking up the library to the pipeline.
 
