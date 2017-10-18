@@ -1,0 +1,48 @@
+{
+  "name": "express-rbac",
+  "version": "1.0.0",
+  "description": "Connect/ express compatible roles and permissions based authorization layer.",
+  "keywords": [
+    "express",
+    "connect",
+    "auth",
+    "roles",
+    "permissions",
+    "authorization"
+  ],
+  "author": "Hernan Bazzino <hernan.bazzino@gmail.com> (https://www.linkedin.com/in/hernanbazzino)",
+  "homepage": "https://github.com/ElChupi/express-rbac",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ElChupi/express-rbac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElChupi/express-rbac/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "devDependencies": {
+    "chai": "2.x.x",
+    "chai-connect-middleware": "0.3.x",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mocha": "2.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {}
+}

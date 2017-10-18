@@ -1,0 +1,9 @@
+docs/
+reports/
+
+# VsCode
+.vscode/
+
+# Node.js
+node_modules
+npm-debug.log
