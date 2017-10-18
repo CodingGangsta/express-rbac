@@ -117,13 +117,13 @@ describe('Authorization', function() {
       
       useFn(req, res, next);
 
-      it('should have the correct properties', function() {
+      it('should have the correct properties, and no extensions', function() {
         expect(authorization._options).to.be.an('object');
         expect(authorization._options.bindToProperty).to.be.undefined;
-        expect(req.isInRole).to.be.an('function');
-        expect(req.isInAnyRole).to.be.an('function');
-        expect(req.hasPermission).to.be.an('function');
-        expect(req.hasAnyPermission).to.be.an('function');
+        expect(req.isInRole).to.be.undefined;
+        expect(req.isInAnyRole).to.be.undefined;
+        expect(req.hasPermission).to.be.undefined;
+        expect(req.hasAnyPermission).to.be.undefined;
       });
 
       it('should have the correct roles', function() {
