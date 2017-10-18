@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    base(href="/", target="_blank")
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css")
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+      script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+    <![endif]-->    
+  body
+    div.container(style="margin-top:10px")
+      .page-header 
+        H1 Express-rbac module
+      .alert.alert-info.text-center 
+        | This is an example project, using 
+        b 
+          | Passport with Local Strategy
+        | &nbsp;for authentication and
+        b
+          | &nbsp;Express Rbac
+        | &nbsp;for authorization.
+        br
+        | Remember you have 2 users to log in, and of course both of them have different roles/ permissions.
+        br
+        b
+          | - John Doe: john@doe.com
+        br
+        b
+          | - Jane Doe: jane@doe.com
+      H4
+        | You are logged in as: 
+        b
+         | #{ user.name }
+         small
+          | &nbsp;(#{user.email})
+        a.btn.btn-primary(href="/logout", target="_self", style="margin-left:15px")
+          | Log out!
+      p This is your full user info:
+      pre
+        | #{ JSON.stringify(user) }
+      H3 The following 2 panels evaluate roles and permissions using the request extension functions
+      .row
+        .col-sm-6
+          .well.well-sm
+            .panel-heading
+              | Roles check using the request extensions
+            .panel-body
+              ol.list-group
+                each check in roleChecks
+                  li.list-group-item
+                    = check.test
+                    span.badge 
+                      | #{(check.result ? "Yes" : "No")}
+
+        .col-sm-6
+          .well.well-sm
+            .panel-heading
+              | Permissions check using the request extensions
+            .panel-body
+              ol.list-group
+                each check in permissionChecks
+                  li.list-group-item
+                    = check.test
+                    span.badge 
+                      | #{(check.result ? "Yes" : "No")}
+      H3 The following 4 panels point to authorized routes
+      .row
+        .col-sm-6
+          .well.well-sm
+            iframe(src="/page1", border="0", style="width:100%;height:100;border:0")
+        .col-sm-6
+          .well.well-sm
+            iframe(src="/page2", border="0", style="width:100%;height:100;border:0")
+        .col-sm-6
+          .well.well-sm
+            iframe(src="/page3", border="0", style="width:100%;height:100;border:0")
+        .col-sm-6
+          .well.well-sm
+            iframe(src="/page4", border="0", style="width:100%;height:100;border:0")                                    
