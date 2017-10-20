@@ -14,7 +14,7 @@
   "homepage": "https://github.com/ElChupi/express-rbac",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ElChupi/express-rbac.git"
+    "url": "git@github.com:ElChupi/express-rbac.git"
   },
   "bugs": {
     "url": "https://github.com/ElChupi/express-rbac/issues"

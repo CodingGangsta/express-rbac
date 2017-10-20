@@ -11,11 +11,18 @@ Once the library is hooked up on the pipeline, just use the 4 built in available
 
 ## Install
 
-```
-$ npm install express-rbac
+```shell
+
+> npm install express-rbac
+
 ```
 
 ## Usage
+
+### Examples
+
+Theres an easy to follow and fully functionl example using Passport.js authentication in the "\examples" folder:  
+You can view it <[here](https://github.com/ElChupi/express-rbac/tree/master/examples/passport-session-rbac)>
 
 ### Registration
 
