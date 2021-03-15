@@ -1,6 +1,6 @@
 {
   "name": "express-rbac",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Connect/ express compatible roles and permissions based authorization layer.",
   "keywords": [
     "express",
@@ -11,13 +11,13 @@
     "authorization"
   ],
   "author": "Hernan Bazzino <hernan.bazzino@gmail.com> (https://www.linkedin.com/in/hernanbazzino)",
-  "homepage": "https://github.com/ElChupi/express-rbac",
+  "homepage": "https://github.com/CodingGangsta/express-rbac",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElChupi/express-rbac.git"
+    "url": "git@github.com:CodingGangsta/express-rbac.git"
   },
   "bugs": {
-    "url": "https://github.com/ElChupi/express-rbac/issues"
+    "url": "https://github.com/CodingGangsta/express-rbac/issues"
   },
   "license": "MIT",
   "licenses": [
