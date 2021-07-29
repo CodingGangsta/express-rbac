@@ -230,4 +230,4 @@ app.get('/somepath',
 
 [The MIT License](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2017 Hernan Bazzino <[GitHub](https://github.com/ElChupi)> <[LinkedIN](https://www.linkedin.com/in/hernanbazzino)>
+Copyright (c) 2017 Hernan Bazzino <[GitHub](https://github.com/CodingGangsta)> <[LinkedIN](https://www.linkedin.com/in/hernanbazzino)>
