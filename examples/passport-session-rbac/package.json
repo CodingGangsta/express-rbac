@@ -13,10 +13,10 @@
   "author": "Hernan Bazzino <hernan.bazzino@gmail.com> (https://www.linkedin.com/in/hernanbazzino)",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.1",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.2",
+    "express": "^4.18.2",
     "express-rbac": "^1.0.2",
     "express-session": "^1.15.6",
     "passport": "^0.4.0",
